@@ -7,18 +7,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
-@Table(name = "order")
+@Table(name = "orders")
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order extends BaseEntity{
+public class Orders extends BaseEntity{
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user")
     private User user;
 
     private LocalDateTime orderDate;
