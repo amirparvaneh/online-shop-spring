@@ -23,7 +23,7 @@ public class Order extends BaseEntity{
 
     private LocalDateTime orderDate;
 
-    private OrderStatus status;
+    //private OrderStatus status;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems;

@@ -1,9 +1,7 @@
 package com.onlineshop.shopstore.domain;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,7 +15,8 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User extends BaseEntity {
+public class User extends BaseEntity{
+
 
     private String name;
 
