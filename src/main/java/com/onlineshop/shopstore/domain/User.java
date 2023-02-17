@@ -29,5 +29,5 @@ public class User extends BaseEntity{
     private String phone;
 
     @OneToMany(mappedBy = "user")
-    private List<Order> orders;
+    private List<Orders> orders;
 }
