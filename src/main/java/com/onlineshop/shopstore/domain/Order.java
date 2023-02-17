@@ -15,7 +15,11 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Order extends BaseEntity{
+public class Order {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -23,7 +27,7 @@ public class Order extends BaseEntity{
 
     private LocalDateTime orderDate;
 
-    private OrderStatus status;
+    //private OrderStatus status;
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItems;
