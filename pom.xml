@@ -27,6 +27,7 @@
         <module>gatewayserver</module>
         <module>payment-service</module>
         <module>authentication-service</module>
+        <module>user-management</module>
         <module>sales-service</module>
     </modules>
 
