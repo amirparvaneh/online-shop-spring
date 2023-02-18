@@ -25,6 +25,7 @@
         <module>configserver</module>
         <module>eurekaserver</module>
         <module>gatewayserver</module>
+        <module>payment-service</module>
         <module>authentication-service</module>
         <module>sales-service</module>
     </modules>
