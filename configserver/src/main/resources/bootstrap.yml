@@ -10,8 +10,8 @@ spring:
         #native:
         #search-locations: classpath:/config
         git:
-          uri: https://github.com/ihuaylupo/config.git
-
+          uri: https://github.com/amirparvaneh/online-shop-microservices-config.git
+        bootstrap: true
 server:
   port: 8071
 
